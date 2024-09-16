@@ -1,40 +1,15 @@
-header {
-  width: 100%;
-  background-color: lightblue;
-}
-
-h2 {
-  text-align: left;
-}
-
-ul {
-  text-align: right;
-  color: #ffffff;
-}
-
-li {
-  display: inline;
-  list-style-type: none;
-  font-size: 40px;
+section {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border: 15px solid black;
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-}
-
-#item-1 {
-  background-color: #e0115f;
-}
-
-#item-2 {
-  background-color: #0000ff;
-}
-
-#item-3 {
-  background-color: #999900;
-}
-
-#image-3 {
-  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 20px;
+  padding: 20px;
+  border: 9px solid darkblue;
 }
