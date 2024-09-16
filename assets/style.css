@@ -9,5 +9,32 @@ h2 {
 
 ul {
   text-align: right;
-  background-color: blue;
+  color: #ffffff;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  font-size: 40px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+#item-1 {
+  background-color: #e0115f;
+}
+
+#item-2 {
+  background-color: #0000ff;
+}
+
+#item-3 {
+  background-color: #999900;
+}
+
+#image-3 {
+  display: block;
 }
