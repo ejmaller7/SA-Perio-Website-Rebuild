@@ -1,23 +1,16 @@
 .lesson {
-    width: 200px;
-    height: 100px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #fffacd;
 }
 
-.section-blue {
-    color: #ffa500;
-    background-color: darkblue;
+#fact-1 {
+    font-weight: bolder;
 }
 
-.container {
-    color: white;
-    background-color: black;
+#fact-2 {
+    font-size: 24px;
 }
 
-#section-1 {
-    color: #ffff00;
-    background-color: #800080;
-}
-
-#section-6 {
-    color: #ffff00;
+#fact-3 {
+    line-height: 50px;
 }
