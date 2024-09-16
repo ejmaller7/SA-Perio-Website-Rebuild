@@ -1,15 +1,5 @@
-section {
-  width: 600px;
-  height: 600px;
-  text-align: center;
-  border: 15px solid black;
-}
-
 img {
-  width: 200px;
-  height: 200px;
-  background-color: lightblue;
-  margin: 20px;
-  padding: 20px;
-  border: 9px solid darkblue;
+  margin: auto 0;
+  border: 10px;
+  padding: 10px;
 }
