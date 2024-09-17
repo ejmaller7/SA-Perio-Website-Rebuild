@@ -1,5 +1,29 @@
-img {
-  margin: auto 0;
-  border: 10px;
-  padding: 10px;
+/* Three rules to CSS
+1. Element
+2. Class
+3. ID 
+*/
+
+head {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: lightblue;
+  color: solid black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.instructor {
+  font-weight: bolder;
+  color: orangered;
+}
+
+.hard {
+  font-weight: bold;
+}
+
+#student {
+  font-style: italic;
+  font-size: small;
 }
