@@ -4,34 +4,50 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="./assets/css/main.css">
-        <title>I could use some Red Bull</title>
+        <title>CSS Positioning</title>
     </head>
 
     <body>
         <header>
-            <h1 class="instructor">Red Bull gives you wings!</h1> 
+            <nav>
+                <ul>
+                    <li>Github</li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
         </header>
-        
-        <section>
-            <img src="./assets/Images/Ski Picture.png" alt="A red bull is necessary"/>
-            <footer id="student">I drank a Red Bull so I was flying down the slopes on skis.</footer>
-        </section>
 
-        <section>
-            <h2 class="instructor">Why could I use a Red Bull?</h2>
-            <ul>
-                <li class="hard">It would wake me up.</li>
-                <li class="hard">Red Bull tastes very good.</li>
-                <li class="hard">Did I mention that is tastes very good.</li>
-            </ul>
-        </section>
+        <main>
+             <h2>My New Website</h2>
+                <figure>
+                    <img src="./assets/Images/Ski Picture.png" alt="Coming Soon">
+                    <figcaption>This is what you can look like if you are cool.</figcaption>
+                </figure>
 
-        <section>
-            <h2 class="instructor">Why can't I learn more things in this course?</h2>
-            <p class="hard">For one, this course has been an extremely slow buildup until now where we are finally learning basic HTML which I already know.</p>
-            <p class="hard">Secondly, it's also because everyone continously asks stupid questions.</p>
-            <p class="hard">Finally, I am also just smart so I am just better than these idiots in this course.</p>
-        </section>
-        
+            <section>
+                <h2>Contact Me</h2>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" name="user-name">
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="text" name="user-email">
+                        </li>
+                    </ul>
+
+                    <div>
+                        <button type="sumbit">SEND</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            © 2024 My New Website Productions
+        </footer>
     </body>
 </html>
