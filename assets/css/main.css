@@ -4,11 +4,15 @@
 3. ID 
 */
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: white;
-    color: navy;
+    color: darkblue;
 }
 
 .header img {
@@ -32,4 +36,42 @@
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    font-size: 90%;
+}
+
+/*This is the image and the gap between the header and the main sections of the webpage*/
+.first-slideshow {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipNo5datlH5MxlV5EP4o4Oxs9DooFam21XSDXvrM=s680-w680-h510);
+    background-size: cover;
+    background-position: center;
+}
+
+.section {
+    width: 50%;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.section h1 {
+    font-size: 140%;
+    color: darkblue;
+    text-align: left;
+
+}
+.section p {
+    font-size: 110%;
+    text-align: left;
+    text-wrap: wrap;
+}
+
+.aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
 }
