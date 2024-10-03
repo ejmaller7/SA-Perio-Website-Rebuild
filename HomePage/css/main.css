@@ -63,6 +63,7 @@ body {
 }
 .section p {
     font-size: 110%;
+    font-weight: lighter;
     text-align: left;
     text-wrap: wrap;
 }
