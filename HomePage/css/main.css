@@ -43,40 +43,8 @@ body {
 .first-slideshow {
     display: flex;
     height: 600px;
-}
-
-.left-section {
-    flex: 7;
-    background-image: url(../Images/FirstSSImage.jpg); /* Image that you want on the left side */
-    background-size: cover;
-    background-position: center;
-}
-
-.right-section {
-    display: flex;
-    flex: 3;
-    background-image: url(../Images/BackgroundPicture_Footer.png);
-    background-color: #0e3967;
+    background-image: url(../Images/SecondSSImage.png);
     background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-section {
-    color: white;
-    text-align: left;
-    padding: 2rem;
-    border-radius: 5px;
-}
-
-.text-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.text-section h2 {
-    font-size: 2rem;
-    margin-top: 1rem;
 }
 
 .section {
