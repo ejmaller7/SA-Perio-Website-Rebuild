@@ -4,6 +4,10 @@
 3. ID 
 */
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -11,8 +15,8 @@ body {
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: white;
-    color: darkblue;
+    background-color: #ffffff;
+    color: #0e3967;
 }
 
 .header img {
@@ -51,28 +55,131 @@ body {
 
 .section {
     width: 50%;
-    display: inline-block;
-    margin-left: 100px;
+    display: flex;
+    margin-left: 300px;
+    margin-right: 100px;
 }
 
-.section h1 {
-    font-size: 140%;
-    color: darkblue;
+.section div h1 {
+    font-size: 36px;
+    font-weight: 100;
+    color: #0e3967;
     text-align: left;
-
 }
-.section p {
-    font-size: 110%;
-    font-weight: lighter;
+
+.section div p {
+    font-size: 16px;
+    color: #0e3967;
+    line-height: 1.6;
     text-align: left;
     text-wrap: wrap;
 }
 
-.aside {
+.slideshow {
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
+}
+
+footer {
+    background-color: #eeeeee;
+    margin-top: 5%;
+}
+
+#padding {
+    padding: 20px;
+}
+
+.form {
+    display: block;
+    margin: 0 20% 5% 20%;
+    padding: 5px;
+    background-color: #0e3968;
+    background-image: url(../Images/BackgroundPicture_Footer.png);
+    background-repeat: no-repeat;
+}
+
+.form h2 {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 20px 25%;
+    text-align: center;
+}
+
+.form section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.makeAnAppointment {
+    display: inline-block;
+    height: 100px;
+    width: 330px;
+    padding: 5px;
+    }
+
+.makeAnAppointment div{
+    display: inline-block;
+}
+
+.makeAnAppointment div img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.makeAnAppointment div h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #0e3968;
+}
+
+.contactTeam {
+    display: inline-block;
+    height: 100px;
+    width: 330px;
+    padding: 5px;
+}
+
+.contactTeam div{
+    display: inline-block;
+}
+
+.contactTeam div img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.contactTeam div h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #0e3968;
+}
+
+.meetUs {
+    display: inline-block;
+    height: 100px;
+    width: 330px;
+    padding: 5px;
+}
+
+.meetUs div{
+    display: inline-block;
+}
+
+.meetUs div img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.meetUs div h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #0e3968;
 }
