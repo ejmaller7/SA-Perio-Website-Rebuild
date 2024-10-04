@@ -27,7 +27,15 @@
     </header>
 
     <main>
-      <section class="first-slideshow"></section>
+      <section class="first-slideshow">
+        <div class="left-section"></div>
+        <div class="right-section">
+            <div class="text-section">
+                <h1>OPTIMIZING</h1>
+                <h2>ORAL HEALTH</h2>
+            </div>
+        </div>
+      </section>
 
       <section class="section">
         <div>
@@ -56,7 +64,61 @@
         </div>
 
         <div class="slideshow">
-          <img src="./HomePage/Images/Doctors-Image1.jpg" alt="FirstImage" />
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          <div class="slides fade">
+            <img src="./HomePage/Images/Doctors-Image1.jpg" alt="FirstImage" />
+          </div>
+          <div class="slides fade">
+            <img
+              src="./HomePage/Images/Equipment-Image2.jpg"
+              alt="SecondImage"
+            />
+          </div>
+          <div class="slides fade">
+            <img
+              src="./HomePage/Images/Equipment2-Image3.jpg"
+              alt="ThirdImage"
+            />
+          </div>
+          <div class="slides fade">
+            <img src="./HomePage/Images/Outside-Image4.jpg" alt="FourthImage" />
+          </div>
+          <div class="slides fade">
+            <img
+              src="./HomePage/Images/Waiting_Room-Image5.jpg"
+              alt="FifthImage"
+            />
+          </div>
+          <div class="slides fade">
+            <img
+              src="./HomePage/Images/Waiting_Room-Image6.jpg"
+              alt="SixthImage"
+            />
+          </div>
+          <div class="slides fade">
+            <img
+              src="./HomePage/Images/Waiting_Room-Image7.jpg"
+              alt="SeventhImage"
+            />
+          </div>
+          <div class="slides fade">
+            <img
+              src="./HomePage/Images/Waiting_Room-Image8.jpg"
+              alt="EighthImage"
+            />
+          </div>
+
+          <div class="dots-container">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
         </div>
       </section>
     </main>
@@ -102,22 +164,28 @@
         </form>
       </section>
 
-      <section>
-        <p>
-          © San Antonio Periodontics & Implants. Website by The Ousset Agency
-          4501 McCullough #104, San Antonio, TX 78212
-        </p>
-        <ul>
-          <li>PATIENTS</li>
-          <li>PERIODONTICS</li>
-          <li>PROCEDURES</li>
-          <li>MEET US</li>
-          <li>INSTRUCTIONS</li>
-          <li>CONTACT US</li>
-          <li>REFERRING</li>
-          <li>(210) 824-0111</li>
-        </ul>
+      <section class="footer">
+        <div class="footer-container">
+          <div class="paragraphs">
+            <p>
+              © San Antonio Periodontics & Implants. Website by
+              <span>Ethan Maller</span>
+            </p>
+            <p>4501 McCullough #104, San Antonio, TX 78212</p>
+          </div>
+          <ul>
+            <li><a href="">PATIENTS</a></li>
+            <li><a href="">PERIODONTICS</a></li>
+            <li><a href="">PROCEDURES</a></li>
+            <li><a href="">MEET US</a></li>
+            <li><a href="">INSTRUCTIONS</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">REFERRING</a></li>
+            <li><a href="">(210) 824-0111</a></li>
+          </ul>
+        </div>
       </section>
     </footer>
+    <script src="./HomePage/javascript/script.js"></script>
   </body>
 </html>

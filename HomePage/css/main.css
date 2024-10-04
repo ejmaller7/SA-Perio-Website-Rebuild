@@ -1,9 +1,3 @@
-/* Three rules to CSS
-1. Element
-2. Class
-3. ID 
-*/
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -13,7 +7,7 @@ body {
 }
 
 .header {
-    padding: 20px;
+    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ffffff;
     color: #0e3967;
@@ -40,24 +34,62 @@ body {
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
-    font-size: 90%;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /*This is the image and the gap between the header and the main sections of the webpage*/
 .first-slideshow {
+    display: flex;
     height: 600px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url(https://lh3.googleusercontent.com/p/AF1QipNo5datlH5MxlV5EP4o4Oxs9DooFam21XSDXvrM=s680-w680-h510);
+}
+
+.left-section {
+    flex: 7;
+    background-image: url(../Images/FirstSSImage.jpg); /* Image that you want on the left side */
     background-size: cover;
     background-position: center;
 }
 
-.section {
-    width: 50%;
+.right-section {
     display: flex;
-    margin-left: 300px;
-    margin-right: 100px;
+    flex: 3;
+    background-image: url(../Images/BackgroundPicture_Footer.png);
+    background-color: #0e3967;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section {
+    color: white;
+    text-align: left;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.text-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%; 
+    max-width: 1250px;
+}
+
+.section > div {
+    width: 50%; 
+    margin-right: 20px;
 }
 
 .section div h1 {
@@ -70,18 +102,90 @@ body {
 .section div p {
     font-size: 16px;
     color: #0e3967;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: left;
-    text-wrap: wrap;
+    word-wrap: break-word;
 }
 
+.section div p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0e3967;
+}
+
+/* Slideshow styling */
 .slideshow {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
+    position: relative;
+    width: 500px; 
+    height: 400px; 
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+.slides {
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.slides img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+/* Arrow buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 18px;
+    user-select: none;
+    z-index: 10;
+    background: none;
+    outline: none;
+}
+
+.prev {
+    left: 10px; 
+}
+
+.next {
+    right: 10px; 
+}
+
+/* Dots container */
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
 }
 
 footer {
@@ -182,4 +286,97 @@ footer {
     font-size: 20px;
     font-weight: lighter;
     color: #0e3968;
+}
+
+.footer {
+    padding-bottom: 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 65%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-container .paragraphs {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container p {
+    font-size: 14px;
+    color: #0e3968;
+    margin: 0 0 5px 0;
+    text-align: left;
+    line-height: 2.2;
+}
+
+.footer-container p span {
+    font-weight: bold;
+}
+
+.footer-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px 50px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0e3967;
+    font-size: 14px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-container ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Responsive adjustments for medium screens (tablets and small desktops) */
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        width: 80%;
+    }
+
+    .footer-container ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Slideshow height adjustment for smaller screens */
+@media screen and (max-width: 768px) {
+    .first-slideshow {
+        height: 400px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Footer list for small mobile screens (below 480px) */
+@media screen and (max-width: 480px) {
+    .footer-container ul {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer-container p {
+        text-align: center;
+    }
 }
